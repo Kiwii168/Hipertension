@@ -94,36 +94,104 @@
             </div>
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <form>
+                  <form id="predictionForm" method="POST">
                      <div class="row">
+                        <!-- Preguntas binarias con radio buttons -->
                         <div class="col-md-12">
-                           <label for="question1">¿Sientes dolores de cabeza frecuentes?</label><br>
-                           <label for="yes1">Sí</label>
-                           <input type="radio" id="yes1" name="question1" value="yes">
-                           <label for="no1">No</label>
-                           <input type="radio" id="no1" name="question1" value="no">
+                           <label for="male">Género</label><br>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="male" name="gender" value="1" required>
+                              <label class="form-check-label" for="male">Masculino</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="female" name="gender" value="0">
+                              <label class="form-check-label" for="female">Femenino</label>
+                           </div>
                         </div>
+
                         <div class="col-md-12">
-                           <label for="question2">¿Tienes visión borrosa?</label><br>
-                           <label for="yes2">Sí</label>
-                           <input type="radio" id="yes2" name="question2" value="yes">
-                           <label for="no2">No</label>
-                           <input type="radio" id="no2" name="question2" value="no">
+                           <label for="age">Edad:</label>
+                           <input type="number" class="form-control" id="age" name="age" required>
                         </div>
+
                         <div class="col-md-12">
-                           <label for="question3">¿Sientes dolor en el pecho?</label><br>
-                           <label for="yes3">Sí</label>
-                           <input type="radio" id="yes3" name="question3" value="yes">
-                           <label for="no3">No</label>
-                           <input type="radio" id="no3" name="question3" value="no">
+                           <label for="currentSmoker">¿Fumas?</label><br>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="currentSmokerYes" name="currentSmoker" value="1" required>
+                              <label class="form-check-label" for="currentSmokerYes">Sí</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="currentSmokerNo" name="currentSmoker" value="0">
+                              <label class="form-check-label" for="currentSmokerNo">No</label>
+                           </div>
                         </div>
-                        <div class="col-md-12" style="display: flex; justify-content: center;">
-                           <a href="Resultados.html">
-                               <button type="button" class="btn btn-primary">Enviar respuestas</button>
-                           </a>
-                       </div>
-                       
-                       
+
+                        <div class="col-md-12">
+                           <label for="cigsPerDay">Número de cigarrillos al día:</label>
+                           <input type="number" class="form-control" id="cigsPerDay" name="cigsPerDay" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="BPMeds">¿Tomas medicamentos para la presión?</label><br>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="BPMedsYes" name="BPMeds" value="1" required>
+                              <label class="form-check-label" for="BPMedsYes">Sí</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="BPMedsNo" name="BPMeds" value="0">
+                              <label class="form-check-label" for="BPMedsNo">No</label>
+                           </div>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="diabetes">¿Tienes diabetes?</label><br>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="diabetesYes" name="diabetes" value="1" required>
+                              <label class="form-check-label" for="diabetesYes">Sí</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" id="diabetesNo" name="diabetes" value="0">
+                              <label class="form-check-label" for="diabetesNo">No</label>
+                           </div>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="totChol">Colesterol total (mg/dL):</label>
+                           <input type="number" class="form-control" id="totChol" name="totChol" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="sysBP">Presión sistólica (mmHg):</label>
+                           <input type="number" class="form-control" id="sysBP" name="sysBP" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="diaBP">Presión diastólica (mmHg):</label>
+                           <input type="number" class="form-control" id="diaBP" name="diaBP" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="BMI">Índice de masa corporal (BMI):</label>
+                           <input type="number" class="form-control" id="BMI" name="BMI" step="0.01" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="heartRate">Frecuencia cardiaca (latidos por minuto):</label>
+                           <input type="number" class="form-control" id="heartRate" name="heartRate" required>
+                        </div>
+
+                        <div class="col-md-12">
+                           <label for="glucose">Nivel de glucosa (mg/dL):</label>
+                           <input type="number" class="form-control" id="glucose" name="glucose" required>
+                        </div>
+
+                        <!-- Botón para enviar el formulario -->
+                        <div class="col-md-12 text-center">
+                           <br>
+                           <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+                           <br>
+                           <br>
+                        </div>
                      </div>
                   </form>
                </div>
@@ -186,4 +254,59 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
    </body>
+
+   <script>
+      document.getElementById('predictionForm').addEventListener('submit', function(event) {
+         event.preventDefault();  // Prevenir el envío del formulario
+   
+         // Obtener los valores de los campos del formulario
+         let gender = document.querySelector('input[name="gender"]:checked').value;
+         let age = document.getElementById('age').value;
+         let currentSmoker = document.querySelector('input[name="currentSmoker"]:checked').value;
+         let cigsPerDay = document.getElementById('cigsPerDay').value;
+         let BPMeds = document.querySelector('input[name="BPMeds"]:checked').value;
+         let diabetes = document.querySelector('input[name="diabetes"]:checked').value;
+         let totChol = document.getElementById('totChol').value;
+         let sysBP = document.getElementById('sysBP').value;
+         let diaBP = document.getElementById('diaBP').value;
+         let BMI = document.getElementById('BMI').value;
+         let heartRate = document.getElementById('heartRate').value;
+         let glucose = document.getElementById('glucose').value;
+   
+         // Crear un objeto con los datos
+         let formData = {
+            gender: gender,
+            age: age,
+            currentSmoker: currentSmoker,
+            cigsPerDay: cigsPerDay,
+            BPMeds: BPMeds,
+            diabetes: diabetes,
+            totChol: totChol,
+            sysBP: sysBP,
+            diaBP: diaBP,
+            BMI: BMI,
+            heartRate: heartRate,
+            glucose: glucose
+         };
+   
+         // Enviar los datos al servidor para hacer la predicción
+         fetch('http://127.0.0.1:5000/prediccion', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+         })
+         .then(response => response.json())
+         .then(data => {
+            // Mostrar el resultado de la predicción
+            alert('El riesgo de hipertensión es: ' + data.prediction);
+         })
+         .catch(error => {
+            console.error('Error:', error);
+         });
+      });
+   </script>
+   
+
 </html>
