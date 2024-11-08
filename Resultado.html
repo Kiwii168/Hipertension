@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>HipertensionsITA</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+<!-- body -->
+
+<body class="main-layout in_page">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarsExample04">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Inicio.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Casos.html">Casos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="QueEs.html">¿Qué es?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Sintomas.html">Síntomas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Prueba.html">Prueba</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="SobreNosotros.html">Sobre nosotros</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+    <!--  service -->
+
+
+
+
+
+
+
+    <!-- Resultado -->
+    <div class="container">
+        <center>
+            <h2 class="mt-5" id="resultadoMensaje"></h2>
+            <p id="descripcionResultado"></p>
+
+            <h3 class="mt-5">Datos del paciente</h3>
+
+            <p id="Genero_texto"></p>
+            <p id="Edad_texto"></p>
+            <p id="Fumas_texto"></p>
+            <p id="CigarrosAlDia_texto"></p>
+            <p id="MedicamentosPresion_texto"></p>
+            <p id="Diabetes_texto"></p>
+            <p id="Colesterol_texto"></p>
+            <p id="PresionSistolica_texto"></p>
+            <p id="PresionDiastolica_texto"></p>
+            <p id="IMC_texto"></p>
+            <p id="FrecuenciaCardiaca_texto"></p>
+            <p id="Glucosa_texto"></p>
+        </center>
+
+        <div class="col-md-12 text-center">
+            <br>
+            <button class="btn btn-outline-primary" onclick="realizarOtraPrueba()" >Realizar otra prueba</button>
+            <br>
+            <br>
+        </div>
+
+
+
+    </div>
+    <!-- end service -->
+    <!--  footer -->
+    <footer style="background-color: #1e1e1e; color: #ffffff;">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6" style="text-align: center;">
+                        <h3 style="color: #ffffff;">INTEGRANTES</h3>
+                        <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                            <li><a style="color: #ffffff;">César</a></li>
+                            <li><a style="color: #ffffff;">Óscar</a></li>
+                            <li><a style="color: #ffffff;">Yahel</a></li>
+                            <li><a style="color: #ffffff;">Steven</a></li>
+                            <li><a style="color: #ffffff;">Diego</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="text-align: center;">
+                        <h3 style="color: #ffffff;">SÍNTOMAS</h3>
+                        <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                            <li><a href="index.html" style="color: #ffffff;">Conocer más</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="text-align: center;">
+                        <h3 style="color: #ffffff;">¿Qué es?</h3>
+                        <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                            <li><a href="index.html" style="color: #ffffff;">Conocer más</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6" style="text-align: center;">
+                        <h3 style="color: #ffffff;">TEST</h3>
+                        <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                            <li><a href="index.html" style="color: #ffffff;">Realizar Test</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright" style="background-color: #1e1e1e; color: #ffffff;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <p style="color: #ffffff;">© 2024 Todos Los Derechos Reservados. Sueltame <a
+                                    href="https://aguascalientes.tecnm.mx" style="color: #ffffff;">TecNM</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <script>
+        // Obtener el resultado de la predicción desde localStorage
+        let genero = localStorage.getItem('genre')
+        let currentSmoker = localStorage.getItem('currentSmoker')
+        let diabetes = localStorage.getItem('diabetes')
+        let BPMeds = localStorage.getItem('BPMeds')
+
+        const convertirABooleano = (valor) => {
+            return valor === '1' ? 'Sí' : 'No';
+        }
+
+        genero = convertirABooleano(genero);
+        currentSmoker = convertirABooleano(currentSmoker);
+        diabetes = convertirABooleano(diabetes);
+        BPMeds = convertirABooleano(BPMeds);
+
+
+        let edad = localStorage.getItem('age')
+        let BMI = localStorage.getItem('BMI')
+        let cigsPerDay = localStorage.getItem('cigsPerDay')
+        let diaBP = localStorage.getItem('diaBP')
+        let glucose = localStorage.getItem('glucose')
+        let heartRate = localStorage.getItem('heartRate')
+        let sysBP = localStorage.getItem('sysBP')
+        let totChol = localStorage.getItem('totChol')
+        let predictionResult = localStorage.getItem('predictionResult');
+
+
+        document.getElementById('Genero_texto').textContent = 'Género: ' + genero;
+        document.getElementById('Edad_texto').textContent = 'Edad: ' + edad;
+        document.getElementById('Fumas_texto').textContent = 'Fumador: ' + currentSmoker;
+        document.getElementById('CigarrosAlDia_texto').textContent = 'Cigarros al dia: ' + cigsPerDay;
+        document.getElementById('MedicamentosPresion_texto').textContent = 'Toma medicamentos para la presión: ' + BPMeds;
+        document.getElementById('Diabetes_texto').textContent = 'Padece de diabetes: ' + diabetes;
+        document.getElementById('Colesterol_texto').textContent = ' Padece de colesterol : ' + totChol;
+        document.getElementById('PresionSistolica_texto').textContent = 'Presión sistólica: ' + sysBP;
+        document.getElementById('PresionDiastolica_texto').textContent = 'Presión diastólica : ' + diaBP;
+        document.getElementById('IMC_texto').textContent = 'Índice de masa corporal : ' + BMI;
+        document.getElementById('FrecuenciaCardiaca_texto').textContent = 'Frecuencia cardiaca : ' + heartRate;
+        document.getElementById('Glucosa_texto').textContent = 'Glucosa : ' + glucose;
+
+
+
+        // Mostrar el mensaje adecuado según el resultado
+        if (predictionResult === '1') {
+            document.getElementById('resultadoMensaje').textContent = '¡Atención! El riesgo de hipertensión es alto.';
+            document.getElementById('descripcionResultado').textContent = 'Se recomienda acudir al doctor para una evaluación más detallada.';
+        } else {
+            document.getElementById('resultadoMensaje').textContent = 'El riesgo de hipertensión es bajo.';
+            document.getElementById('descripcionResultado').textContent = 'Continúa manteniendo un estilo de vida saludable.';
+        }
+
+
+        function realizarOtraPrueba() {
+            localStorage.clear();
+
+            window.location.href = 'Prueba.html';
+        }
+    </script>
+
+
+</html>
