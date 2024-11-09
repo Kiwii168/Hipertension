@@ -195,7 +195,11 @@
             return valor === '1' ? 'Sí' : 'No';
         }
 
-        genero = convertirABooleano(genero);
+        const convertirAGenero = (valor) => {
+            return valor === '1' ? 'Masculino' : 'Femenino';
+        }
+
+        genero = convertirAGenero(genero);
         currentSmoker = convertirABooleano(currentSmoker);
         diabetes = convertirABooleano(diabetes);
         BPMeds = convertirABooleano(BPMeds);
