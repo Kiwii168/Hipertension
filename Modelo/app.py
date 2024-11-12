@@ -2,10 +2,8 @@ from flask import Flask, request, jsonify
 import pickle
 from flask_cors import CORS
 
-
 app = Flask(__name__)
 CORS(app)
-
 
 # Cargar el modelo y el escalador
 try:
@@ -61,7 +59,7 @@ def prediccion():
         prediccion = modelo.predict(datos_normalizados)
 
         # Devolver el resultado
-        return jsonify({'prediction': str(prediccion[0])})
+        return jsonify({'prediction': int(prediccion[0])})
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500

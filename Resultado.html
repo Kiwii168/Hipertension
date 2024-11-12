@@ -222,12 +222,12 @@
         document.getElementById('CigarrosAlDia_texto').textContent = 'Cigarros al dia: ' + cigsPerDay;
         document.getElementById('MedicamentosPresion_texto').textContent = 'Toma medicamentos para la presión: ' + BPMeds;
         document.getElementById('Diabetes_texto').textContent = 'Padece de diabetes: ' + diabetes;
-        document.getElementById('Colesterol_texto').textContent = ' Padece de colesterol : ' + totChol;
-        document.getElementById('PresionSistolica_texto').textContent = 'Presión sistólica: ' + sysBP;
-        document.getElementById('PresionDiastolica_texto').textContent = 'Presión diastólica : ' + diaBP;
-        document.getElementById('IMC_texto').textContent = 'Índice de masa corporal : ' + BMI;
-        document.getElementById('FrecuenciaCardiaca_texto').textContent = 'Frecuencia cardiaca : ' + heartRate;
-        document.getElementById('Glucosa_texto').textContent = 'Glucosa : ' + glucose;
+        document.getElementById('Colesterol_texto').textContent = 'Colesterol total (mg/dL): ' + totChol;
+        document.getElementById('PresionSistolica_texto').textContent = 'Presión sistólica (mmHg): ' + sysBP;
+        document.getElementById('PresionDiastolica_texto').textContent = 'Presión diastólica (mmHg): ' + diaBP;
+        document.getElementById('IMC_texto').textContent = 'Índice de masa corporal (BMI): ' + BMI;
+        document.getElementById('FrecuenciaCardiaca_texto').textContent = 'Frecuencia cardiaca (latidos por minuto): ' + heartRate;
+        document.getElementById('Glucosa_texto').textContent = 'Nivel de glucosa (mg/dL): ' + glucose;
 
 
 
@@ -235,7 +235,7 @@
         if (predictionResult === '1') {
             document.getElementById('resultadoMensaje').textContent = '¡Atención! El riesgo de hipertensión es alto.';
             document.getElementById('descripcionResultado').textContent = 'Se recomienda acudir al doctor para una evaluación más detallada.';
-        } else {
+        } else if (predictionResult ==='0'){
             document.getElementById('resultadoMensaje').textContent = 'El riesgo de hipertensión es bajo.';
             document.getElementById('descripcionResultado').textContent = 'Continúa manteniendo un estilo de vida saludable.';
         }
