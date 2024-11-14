@@ -7,10 +7,10 @@ CORS(app)
 
 # Cargar el modelo y el escalador
 try:
-    with open('modelo_hipertension.pkl', 'rb') as f:
+    with open('./Modelo/modelo_hipertension.pkl', 'rb') as f:
         modelo = pickle.load(f)
 
-    with open('escalador.pkl', 'rb') as f:
+    with open('./Modelo/escalador.pkl', 'rb') as f:
         scaler = pickle.load(f)
 except Exception as e:
     print("Error al cargar el modelo o el escalador:", e)
