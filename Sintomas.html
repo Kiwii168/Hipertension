@@ -25,13 +25,22 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+      <!-- Estilos adicionales para el marco rojo -->
+      <style>
+         .symptoms-box {
+            border: 3px solid greenyellow; /* Marco rojo */
+            padding: 20px;        /* Espacio interno */
+            border-radius: 8px;   /* Bordes redondeados */
+            background-color: #f9f9f9; /* Fondo claro */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+         }
+      </style>
    </head>
    <!-- body -->
    <body class="main-layout in_page">
       <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
+      
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -43,7 +52,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="Inicio.html"><img src="images/logo.png" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -95,7 +104,8 @@
             </div>
             <div class="row">
                <div class="col-md-12">
-                  <div class="case_description">
+                  <!-- Sección con el marco rojo -->
+                  <div class="case_description symptoms-box">
                      <h3>Sintomas comunes de la Hipertensión</h3>
                      <p>La hipertensión es una condición silenciosa, a menudo sin síntomas evidentes, pero puede tener consecuencias graves si no se controla. Es importante reconocer los signos para buscar tratamiento temprano.</p>
                      
@@ -120,10 +130,11 @@
                      </ul>
                      <p>Tomar medidas preventivas y controlar la presión arterial puede mejorar significativamente la salud a largo plazo.</p>
                   </div>
-                  <div style="text-align: center;">
+                  
+                  <div style="text-align: center; margin-top: 30px;">
                      <a href="Prueba.html" class="btn btn-primary" style="color: #ffffff; text-decoration: none; padding: 10px 20px; background-color: #007bff; border-radius: 5px;">Realizar Prueba</a>
-                   </div>
-                   
+                  </div>
+                  
                </div>
            </div>
             </div>
@@ -138,54 +149,54 @@
      </div>
      
       <!-- end service -->
-      <!--  footer -->
-      <footer style="background-color: #1e1e1e; color: #ffffff;">
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-3 col-sm-6" style="text-align: center;">
-                     <h3 style="color: #ffffff;">INTEGRANTES</h3>
-                     <ul class="link_menu" style="list-style-type: none; padding: 0;">
-                        <li><a style="color: #ffffff;">César</a></li>
-                        <li><a style="color: #ffffff;">Óscar</a></li>
-                        <li><a style="color: #ffffff;">Yahel</a></li>
-                        <li><a style="color: #ffffff;">Steven</a></li>
-                        <li><a style="color: #ffffff;">Diego</a></li>
-                        <li><a style="color: #ffffff;">Alexis</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 col-sm-6" style="text-align: center;">
-                     <h3 style="color: #ffffff;">SÍNTOMAS</h3>
-                     <ul class="link_menu" style="list-style-type: none; padding: 0;">
-                        <li><a href="Sintomas.html" style="color: #ffffff;">Conocer más</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 col-sm-6" style="text-align: center;">
-                     <h3 style="color: #ffffff;">¿Qué es?</h3>
-                     <ul class="link_menu" style="list-style-type: none; padding: 0;">
-                        <li><a href="QueEs.html" style="color: #ffffff;">Conocer más</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 col-sm-6" style="text-align: center;">
-                     <h3 style="color: #ffffff;">TEST</h3>
-                     <ul class="link_menu" style="list-style-type: none; padding: 0;">
-                        <li><a href="Prueba.html" style="color: #ffffff;">Realizar Test</a></li>
-                     </ul>
-                  </div>
+     <!--  footer -->
+     <footer style="background-color: #1e1e1e; color: #ffffff;">
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-sm-6" style="text-align: center;">
+                  <h3 style="color: #ffffff;">INTEGRANTES</h3>
+                  <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                     <li><a style="color: #ffffff;">César</a></li>
+                     <li><a style="color: #ffffff;">Óscar</a></li>
+                     <li><a style="color: #ffffff;">Yahel</a></li>
+                     <li><a style="color: #ffffff;">Steven</a></li>
+                     <li><a style="color: #ffffff;">Diego</a></li>
+                     <li><a style="color: #ffffff;">Alexis</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 col-sm-6" style="text-align: center;">
+                  <h3 style="color: #ffffff;">SÍNTOMAS</h3>
+                  <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                     <li><a href="Sintomas.html" style="color: #ffffff;">Conocer más</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 col-sm-6" style="text-align: center;">
+                  <h3 style="color: #ffffff;">¿Qué es?</h3>
+                  <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                     <li><a href="QueEs.html" style="color: #ffffff;">Conocer más</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 col-sm-6" style="text-align: center;">
+                  <h3 style="color: #ffffff;">TEST</h3>
+                  <ul class="link_menu" style="list-style-type: none; padding: 0;">
+                     <li><a href="Prueba.html" style="color: #ffffff;">Realizar Test</a></li>
+                  </ul>
                </div>
             </div>
-            <div class="copyright" style="background-color: #1e1e1e; color: #ffffff;">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        <p style="color: #ffffff;">© 2024 Todos Los Derechos Reservados. Sueltame <a href="https://aguascalientes.tecnm.mx" style="color: #ffffff;">TecNM</a></p>
-                     </div>
+         </div>
+         <div class="copyright" style="background-color: #1e1e1e; color: #ffffff;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <p style="color: #ffffff;">© 2024 Todos Los Derechos Reservados. Sueltame <a href="https://aguascalientes.tecnm.mx" style="color: #ffffff;">TecNM</a></p>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
-      <!-- end footer -->
+      </div>
+   </footer>
+   <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
